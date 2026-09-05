@@ -33,7 +33,9 @@ tests:
       imports:
         - flexcache
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Saves and loads to the cache a transformed versions of a source object.
